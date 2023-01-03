@@ -14,10 +14,11 @@
   font-family: "Plus Jakarta Sans", sans-serif;
   /* border: 1px solid rgba(128, 128, 128, 0.445); */
   font-size: 16px;
+  transition: 0.3s;
 }
 
-img{
-    width: 50px;
+img {
+  width: 50px;
 }
 body {
   background-color: var(--color-very-light-grayish-blue);
@@ -32,19 +33,22 @@ p {
   color: var(--color-dark-grayish-blue);
   margin: 0;
 }
-b{
+b {
+  color: var(--color-dark-grayish-blue);
+}
+b:hover{
     color: var(--color-blue);
 }
 
-span{
-    /* font-weight: 800; */
+span {
+
 }
 
-small{
-    color: var(--color-grayish-blue);
+small {
+  color: var(--color-grayish-blue);
 }
-h1{
-    font-size: 20px;
+h1 {
+  font-size: 20px;
 }
 .main {
   width: 600px;
@@ -52,31 +56,58 @@ h1{
   border-radius: 10px;
   padding: 15px;
 }
+
+.counter {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  width: 30px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-weight: 800;
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.notifications {
+.label {
   display: flex;
+  align-items: center;
 }
-.notification{
-    /* display: flex; */
+.notification {
+  /* display: flex; */
 }
-.notification-container{
-    background-color: var(--color-very-light-grayish-blue);
-    padding: 20px;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr 7fr ;
+.notification-container {
+  background-color: var(--color-very-light-grayish-blue);
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  margin: 5px;
+  position: relative;
 }
 
+.picture {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+.message {
+  padding: 15px;
+  margin: 5px;
+  background-color: var(--color-Light-grayish-blue-one);
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 450px) {
