@@ -111,7 +111,15 @@ h1 {
 }
 
 @media screen and (max-width: 450px) {
-  * {
-    background-color: blue;
+  .main {
+    width: 100%;
+    border-radius: none;
+  }
+  .notification{
+    margin: 5px;
+  }
+
+  .picture {
+    top: 50px;
   }
 }
